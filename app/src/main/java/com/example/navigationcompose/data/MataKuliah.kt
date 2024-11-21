@@ -1,7 +1,7 @@
 package com.example.navigationcompose.data
 
 object MataKuliah {
-    val option = listOf(
+    val options = listOf(
         "Pemrograman Aplikasi Mobile Lanjut",
         "Pengembangan Aplikasi Web Framework",
         "Prototyping",
