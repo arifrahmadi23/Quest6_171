@@ -11,6 +11,7 @@ import com.example.navigationcompose.model.Mahasiswa
 fun RencanaStudyView(
     mahasiswa: Mahasiswa,
     onSubmitButtonClicked: (MutableList<String>) -> Unit,
-    onBackButtonClicked: () -> Unit ){
-
+    onBackButtonClicked: () -> Unit
+){
+    var chosenDropdown by remember { mutableStateOf("") }
 }
