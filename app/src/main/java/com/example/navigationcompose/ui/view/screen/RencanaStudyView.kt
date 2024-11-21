@@ -14,4 +14,5 @@ fun RencanaStudyView(
     onBackButtonClicked: () -> Unit
 ){
     var chosenDropdown by remember { mutableStateOf("") }
+    var checked by remember { mutableStateOf(false) }
 }
