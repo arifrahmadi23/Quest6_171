@@ -137,7 +137,7 @@ fun RencanaStudyView(
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ){
                     RuangKelas.kelas.forEach{data ->
-                        Row(verticalAlignment = Alignment.CenterHorizontally) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
                             RadioButton(
                                 selected = pilihanKelas == data,
                                 onClick = {pilihanKelas = data}
