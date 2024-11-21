@@ -26,6 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -33,7 +34,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.navigationcompose.R
+import com.example.navigationcompose.data.MataKuliah
 import com.example.navigationcompose.model.Mahasiswa
+import com.example.navigationcompose.ui.widget.DynamicSelectTextField
 
 @Composable
 fun RencanaStudyView(
@@ -105,6 +108,15 @@ fun RencanaStudyView(
                     text = "Silahkan pilih mata kuliah yang anda inginkan",
                     fontSize = 12.sp,
                     fontWeight = FontWeight.Light
+                )
+                Spacer(modifier = Modifier.padding(8.dp))
+                DynamicSelectTextField(
+                    selectedValue = chosenDropdown,
+                    options = MataKuliah.options,
+                    label = "Mata Kuliah",
+                    onValueChangedEvent = {
+                        chosenDropdown = it
+                    }
                 )
             }
         }
