@@ -39,7 +39,7 @@ import com.example.navigationcompose.R
 
 @Composable
 fun MahasiswaFormView(
-    onSubmitButton: (MutableList<String>) -> Unit,
+    onSubmitButtonClicked:  (MutableList<String>) -> Unit,
     onBackButtonClicked: () -> Unit
 ){
 
@@ -163,7 +163,7 @@ fun MahasiswaFormView(
                         Text(text = "Kembali")
                     }
 
-                    Button( onClick = {onSubmitButton(listData)},
+                    Button( onClick = {onSubmitButtonClicked(listData)},
                         modifier = Modifier
 
 
