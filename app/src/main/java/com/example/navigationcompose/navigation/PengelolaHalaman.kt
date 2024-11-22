@@ -61,5 +61,8 @@ fun MahasiswaApp(
                 onBackButtonClicked = {navController.popBackStack()}
             )
         }
+        composable(route = Halaman.Tampil.name){
+
+        }
     }
 }
