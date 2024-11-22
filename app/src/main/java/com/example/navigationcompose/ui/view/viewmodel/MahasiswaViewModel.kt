@@ -18,7 +18,7 @@ class MahasiswaViewModel : ViewModel() {
             statusSaatIni.copy(
                 nim =ls[0],
                 nama =ls[1],
-                email =ls[3]
+                email =ls[2]
             )
         }
     }
